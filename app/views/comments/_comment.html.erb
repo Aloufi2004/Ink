@@ -1,0 +1,5 @@
+<br>
+<%= current_user.username %><br>
+<%= comment.comment %><br>
+<%= time_ago_in_words(comment.created_at) %>
+<%= link_to 'Delete', [comment.post,comment], method: :delete, data: {confirm: "are you sure?"} %>
